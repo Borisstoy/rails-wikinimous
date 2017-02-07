@@ -4,8 +4,12 @@
     <%= f.text_field :title, class:"form-control" %>
     <br>
     <label for="">Article</label>
-    <%= f.text_area :content, class:"form-control" %>
+    <textarea id="editor"><%= f.text_area :content, class:"form-control" %></textarea>
     <br>
     <%= f.submit "Create", class:"btn btn-primary" %>
   </div>
 <% end %>
+
+<script>
+  var editor = ace.edit("editor");
+</script>

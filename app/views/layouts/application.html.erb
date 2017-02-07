@@ -16,25 +16,23 @@
 
   <body>
 
-  <ul class="navigation nav nav-pills">
-    <li class="nav-item">
-      <%= link_to "Wikileaks", articles_path, class:"nav-item nav-link active" %>
-    </li>
-    <li class="nav-item">
-      <%= link_to "Create an article", new_article_path, class:"nav-item nav-link active" %>
-    </li>
-    <div class="nav-right">
-        <% if current_user %>
-      <li>
-          Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout', class:"nav-item nav-link active" %>
-      </li>
+    <div class="main-navigation">
+      <div class="nav-items-logo">
+        <%= link_to "Wikiki", articles_path, class:"logo" %>
+      </div>
+      <div class="nav-items">
+        <%= link_to "Create an article", new_article_path, class:"link-nav" %>
+      </div>
+      <div class="nav-items">
+          <% if current_user %>
+          Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout', class:"link-nav" %>
+      </div>
         <% else %>
-      <li>
-          <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup', class:"nav-item nav-link active" %>
+      <div class="nav-items">
+          <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup', class:"link-nav" %>
         <% end %>
-      </li>
+      </div>
     </div>
-  </ul>
 
     <%= yield %>
 

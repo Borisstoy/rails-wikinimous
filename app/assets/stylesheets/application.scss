@@ -21,18 +21,57 @@ p, a {
   font-family: 'Open Sans', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
 
-.navigation {
+body {
+  color: #f1f1f1;
+}
+
+.main-navigation {
   border-bottom: 1px solid #333333;
   display: flex;
+  background-color: #000000;
 }
 
-.nav-item {
-  color: #333333;
+.logo {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 2em;
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: #f1f1f1;
+  }
 }
 
-.nav-right {
-  display: flex;
-  float: right;
+.nav-items-logo {
+  color: #fff;
   align-items: center;
+  justify-content: center;
+  padding: 1.1em;
+  display: flex;
 }
+
+.nav-items {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1em;
+  display: flex;
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:hover {
+    background-color: #313131;
+  }
+}
+
+.link-nav {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+

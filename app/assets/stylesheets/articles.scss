@@ -11,13 +11,6 @@ ul {
   margin-top: 3rem;
 }
 
-.welcome-title {
-  margin: 5rem 0;
-  font-family: Oswald;
-  font-size: 5em;
-}
-
-
 .wrapper-articles {
   margin: 3rem 0;
   &:hover {
@@ -37,6 +30,24 @@ ul {
   color: #333333;
   &:hover {
     text-decoration: none;
+  }
+}
+
+pre {
+  height: 300px;
+}
+
+.banner {
+  margin-bottom: 50px;
+  background-color: #f2f2f2;
+  display: fex;
+  h1 {
+    color: #333333;
+    justify-content: center;
+    font-family: Oswald;
+    font-size: 5em;
+    padding-top: .8em;
+    padding-bottom: .8em;
   }
 }
 

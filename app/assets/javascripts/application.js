@@ -16,5 +16,3 @@
 //= require_tree .
 
 // = require ace-rails-ap
-= require ace/theme-sometheme
-= require ace/mode-somemode
