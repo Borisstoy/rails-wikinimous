@@ -24,10 +24,11 @@ ul {
 }
 
 .title-article {
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin: 1.3rem 0;
-  font-weight: bold;
+  font-weight: 500;
   color: #333333;
+  font-family: Oswald;
   &:hover {
     text-decoration: none;
   }
@@ -45,6 +46,7 @@ pre {
     color: #333333;
     justify-content: center;
     font-family: Oswald;
+    font-weight: 700;
     font-size: 5em;
     padding-top: .8em;
     padding-bottom: .8em;
