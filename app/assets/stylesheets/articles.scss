@@ -1,0 +1,45 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 3rem;
+}
+
+.wrapper-articles {
+  margin: 2rem 0;
+}
+
+.title-sections {
+  text-align: center;
+}
+
+.title-article {
+  font-size: 1.6em;
+  margin: 1.3rem 0;
+  color: #333333;
+  &:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color: #f1f1f1;
+  }
+}
+
+.navigation {
+  background-color: #f1f1f1;
+  ul {
+    color: #333333;
+  }
+}
