@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-xs-12 col-md-offset-3 col-md-6">
       <br>
-      <h1 class="welcome-title"><%= @article.title %></h1>
-      <p><%= @article.content %></p>
+      <h1 class="article-title"><%= @article.title %></h1>
+      <p><%= Kramdown::Document.new(@article.content).to_html.html_safe %></p>
       <br>
       <hr>
       <br>

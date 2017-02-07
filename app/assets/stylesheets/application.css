@@ -20,3 +20,19 @@ h1, h2, h3, h4, h5 {
 p, a {
   font-family: 'Open Sans', sans-serif;
 }
+
+
+.navigation {
+  border-bottom: 1px solid #333333;
+  display: flex;
+}
+
+.nav-item {
+  color: #333333;
+}
+
+.nav-right {
+  display: flex;
+  float: right;
+  align-items: center;
+}

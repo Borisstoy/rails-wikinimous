@@ -17,6 +17,7 @@ ul {
   font-size: 5em;
 }
 
+
 .wrapper-articles {
   margin: 3rem 0;
   &:hover {
@@ -32,17 +33,10 @@ ul {
 .title-article {
   font-size: 1.6em;
   margin: 1.3rem 0;
+  font-weight: bold;
   color: #333333;
   &:hover {
     text-decoration: none;
   }
 }
 
-.navigation {
-  color: #fff;
-  border-bottom: 1px solid #333333;
-}
-
-.nav-item {
-  color: #333333;
-}
