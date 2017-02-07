@@ -1,16 +1,15 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-offset-3 col-md-6">
-      <h1>Articles</h1>
+      <h1 class="welcome-title">Feeling like reading?</h1>
       <%= link_to "Write an article", new_article_path, class:"btn btn-default"%>
-      <div class="wrapper-articles">
         <% @articles.each do |article| %>
-          <ul>
+          <ul class="wrapper-articles">
             <li><%= link_to article.title, article, class:"title-article" %></li>
-            <li><%= article.content %></li>
+            <li><%= truncate article.content, length: 120 %></li>
+            <hr>
           </ul>
         <% end %>
-      </div>
     </div>
   </div>
 </div>
